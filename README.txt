@@ -13,6 +13,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Woocommerce Gift Coupon lets you create a WooCommerce product category known as 'GiftCoupon' which will serve as a reference for our customers to give discount coupons to friends in future purchases. 
 When buying this type of product , the administrator comes the order type 'GiftCoupon' and when complete, the administrator can generate coupons and codes to send mail to the consumer.
 
+**BASIC OPTIONS**  
+
+* **SETTINGS COUPON**  
+You can set the coupon that will sell and subsequently will generate for the customer. You can create as many coupon type products you want to sell
+
+* **EMAIL - CUSTOMIZE TEMPLATE**  
+You can change the style of the email template to be sent to your customers while generating coupons
+
+* **COUPONS GENERATED**  
+At all times you can check in WooCommerce orders , coupons that have been generated and sending for each order.
 
 == Installation ==
 
