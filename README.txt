@@ -32,6 +32,9 @@ At all times you can check in WooCommerce orders , coupons that have been genera
 
 == Changelog ==
 
+= Version 1.1 =
+* 	Fixed: Bug unnistall
+
 = Version 1.0 =
 * 	initial version
 

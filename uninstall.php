@@ -3,6 +3,8 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
     exit;
 }
 
+global $wpdb;
+
 delete_option( 'woocommerce_gift_coupon_text_color_header' );
 delete_option( 'woocommerce_gift_coupon_text_color_footer' );
 delete_option( 'woocommerce_gift_coupon_text_color_title' );
