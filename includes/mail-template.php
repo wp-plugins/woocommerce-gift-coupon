@@ -51,8 +51,8 @@ function woocommerce_gift_coupon_generate_body_mail( $data ) {
     $woocommerce_gift_coupon_bg_color_header = get_option( 'woocommerce_gift_coupon_bg_color_header' );
     $woocommerce_gift_coupon_bg_color_footer = get_option( 'woocommerce_gift_coupon_bg_color_footer' );
     
-    $email ='<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-        <html xmlns="http://www.w3.org/1999/xhtml">
+    $email ='
+        <html>
             <head>
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             <title>' . $woocommerce_gift_coupon_subject . '</title>
