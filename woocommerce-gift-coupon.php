@@ -3,7 +3,7 @@
  * Plugin Name: Woocommerce Gift Coupon
  * Description: This plugin generates coupons from products bought by WooCommerce, once generated customer sends by email
  * Depends: WooCommerce
- * Version: 1.1
+ * Version: 1.2
  * Author: Alberto Pérez
  * Author URI: http://www.studiosweb.es/wordpress/woocommerce-gift-coupon/
  * License: GPL2
@@ -22,7 +22,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-define( 'WOOCOMMERCE_GIFT_COUPON_VERSION', '1.1' );
+define( 'WOOCOMMERCE_GIFT_COUPON_VERSION', '1.2' );
 define( 'WOOCOMMERCE_GIFT_COUPON_DIR', plugin_dir_path(__FILE__) );
 define( 'WOOCOMMERCE_GIFT_COUPON_URL', plugin_dir_url(__FILE__) );
 
@@ -300,10 +300,15 @@ function woocommerce_gift_coupon_bulk_action() {
                         $sc = false;
                     }
                     if( ! empty( $coupons_mail ) ) {
+                        $headers = "MIME-Version: 1.0" . "\r\n";
+                        $headers .= 'From: ' . get_bloginfo('name') . ' <' . get_bloginfo('admin_email') . '>' . "\r\n" .
+                        'Reply-To: ' . get_bloginfo('admin_email') . '' . "\r\n" .
+                        'X-Mailer: PHP/' . phpversion() . "\r\n" .
+                        $headers .= "Content-Type: text/html\n";
                         $body = woocommerce_gift_coupon_generate_body_mail( $coupons_mail );
                         add_filter( 'wp_mail_content_type', create_function( '', 'return "text/html";' ) );
                         $woocommerce_gift_coupon_subject = get_option( 'woocommerce_gift_coupon_subject' );
-                        wp_mail( $mailto, $woocommerce_gift_coupon_subject,  $body );
+                        wp_mail( $mailto, $woocommerce_gift_coupon_subject, $body, $headers );
                     } 
 		}
 		$sendback = add_query_arg( array( 'generated_coupon' => $generated_coupon, 'ids' => join( ',', $post_ids ) ), $sendback );
