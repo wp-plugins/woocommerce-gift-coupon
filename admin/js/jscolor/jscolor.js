@@ -1,3 +1,3 @@
 jQuery(document).ready(function($){
-    $('.color').wpColorPicker();
+    $('.woocommerce-gift-coupon-color').wpColorPicker();
 });
