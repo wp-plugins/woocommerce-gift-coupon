@@ -4,7 +4,7 @@ Tags: generate coupons, coupons woocommerce, gift coupons, woocommerce gift coup
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F3E987XCMEGRQ
 Requires at least: 3.4
 Tested up to: 4.1.1
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,9 @@ At all times you can check in WooCommerce orders , coupons that have been genera
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Changelog ==
+
+= Version 1.3 =
+* 	Fixed: Sanitize admin form
 
 = Version 1.2 =
 * 	Fixed: Email send to spam folder

@@ -1,14 +1,14 @@
 <?php 
 if( ! empty( $_POST['Submit'] ) && $_POST['Submit'] == 'Save options' ) {
 
-    $woocommerce_gift_coupon_info_paragraph = isset( $_POST['woocommerce_gift_coupon_info_paragraph'] ) ? $_POST['woocommerce_gift_coupon_info_paragraph'] : null ;
-    $woocommerce_gift_coupon_subject = isset( $_POST['woocommerce_gift_coupon_subject'] ) ? $_POST['woocommerce_gift_coupon_subject'] : null ;
-    $woocommerce_gift_coupon_title = isset( $_POST['woocommerce_gift_coupon_title'] ) ? $_POST['woocommerce_gift_coupon_title'] : null ;
-    $woocommerce_gift_coupon_text_color_header = isset( $_POST['woocommerce_gift_coupon_text_color_header'] ) ? $_POST['woocommerce_gift_coupon_text_color_header'] : null ;
-    $woocommerce_gift_coupon_text_color_footer = isset( $_POST['woocommerce_gift_coupon_text_color_footer'] ) ? $_POST['woocommerce_gift_coupon_text_color_footer'] : null ;
-    $woocommerce_gift_coupon_text_color_title = isset( $_POST['woocommerce_gift_coupon_text_color_title'] ) ? $_POST['woocommerce_gift_coupon_text_color_title'] : null ;
-    $woocommerce_gift_coupon_bg_color_header = isset( $_POST['woocommerce_gift_coupon_bg_color_header'] ) ? $_POST['woocommerce_gift_coupon_bg_color_header'] : null ;
-    $woocommerce_gift_coupon_bg_color_footer = isset( $_POST['woocommerce_gift_coupon_bg_color_footer'] ) ? $_POST['woocommerce_gift_coupon_bg_color_footer'] : null ;
+    $woocommerce_gift_coupon_info_paragraph = sanitize_text_field ( isset( $_POST['woocommerce_gift_coupon_info_paragraph'] ) ? esc_html( trim( $_POST['woocommerce_gift_coupon_info_paragraph'] ) ) : null );
+    $woocommerce_gift_coupon_subject = sanitize_text_field ( isset( $_POST['woocommerce_gift_coupon_subject'] ) ? esc_html( trim( $_POST['woocommerce_gift_coupon_subject'] ) ) : null );
+    $woocommerce_gift_coupon_title = sanitize_text_field ( isset( $_POST['woocommerce_gift_coupon_title'] ) ? esc_html( trim( $_POST['woocommerce_gift_coupon_title'] ) ) : null );
+    $woocommerce_gift_coupon_text_color_header = sanitize_text_field ( isset( $_POST['woocommerce_gift_coupon_text_color_header'] ) ? esc_html( trim( $_POST['woocommerce_gift_coupon_text_color_header'] ) ) : null );
+    $woocommerce_gift_coupon_text_color_footer = sanitize_text_field ( isset( $_POST['woocommerce_gift_coupon_text_color_footer'] ) ? esc_html( trim( $_POST['woocommerce_gift_coupon_text_color_footer'] ) ) : null );
+    $woocommerce_gift_coupon_text_color_title = sanitize_text_field ( isset( $_POST['woocommerce_gift_coupon_text_color_title'] ) ? esc_html( trim( $_POST['woocommerce_gift_coupon_text_color_title'] ) ) : null );
+    $woocommerce_gift_coupon_bg_color_header = sanitize_text_field ( isset( $_POST['woocommerce_gift_coupon_bg_color_header'] ) ? esc_html( trim( $_POST['woocommerce_gift_coupon_bg_color_header'] ) ) : null );
+    $woocommerce_gift_coupon_bg_color_footer = sanitize_text_field ( isset( $_POST['woocommerce_gift_coupon_bg_color_footer'] ) ? esc_html( trim( $_POST['woocommerce_gift_coupon_bg_color_footer'] ) ) : null );
 
     update_option( 'woocommerce_gift_coupon_info_paragraph', $woocommerce_gift_coupon_info_paragraph );
     update_option( 'woocommerce_gift_coupon_subject', $woocommerce_gift_coupon_subject );
