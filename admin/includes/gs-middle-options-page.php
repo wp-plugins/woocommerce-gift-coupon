@@ -66,23 +66,23 @@ $woocommerce_gift_coupon_bg_color_footer = get_option( 'woocommerce_gift_coupon_
                 <table>
                     <tr>
                         <td><?php _e( 'Background header color:', 'woocommerce-gift-coupon' ); ?></td>
-                        <td><input type="text" class="color" name="woocommerce_gift_coupon_bg_color_header" id="woocommerce_gift_coupon_bg_color_header" value="<?php echo $woocommerce_gift_coupon_bg_color_header; ?>"></td>
+                        <td><input type="text" class="woocommerce-gift-coupon-color" name="woocommerce_gift_coupon_bg_color_header" id="woocommerce_gift_coupon_bg_color_header" value="<?php echo $woocommerce_gift_coupon_bg_color_header; ?>"></td>
                     </tr>
                     <tr>
                         <td><?php _e( 'Text color header:', 'woocommerce-gift-coupon' ); ?></td>
-                        <td><input type="text" class="color" name="woocommerce_gift_coupon_text_color_header" id="woocommerce_gift_coupon_text_color_header" value="<?php echo $woocommerce_gift_coupon_text_color_header; ?>"></td>
+                        <td><input type="text" class="woocommerce-gift-coupon-color" name="woocommerce_gift_coupon_text_color_header" id="woocommerce_gift_coupon_text_color_header" value="<?php echo $woocommerce_gift_coupon_text_color_header; ?>"></td>
                     </tr>
                     <tr>
                         <td><?php _e( 'Background footer color:', 'woocommerce-gift-coupon' ); ?></td>
-                        <td><input type="text" class="color" name="woocommerce_gift_coupon_bg_color_footer" id="woocommerce_gift_coupon_bg_color_footer" value="<?php echo $woocommerce_gift_coupon_bg_color_footer; ?>"></td>
+                        <td><input type="text" class="woocommerce-gift-coupon-color" name="woocommerce_gift_coupon_bg_color_footer" id="woocommerce_gift_coupon_bg_color_footer" value="<?php echo $woocommerce_gift_coupon_bg_color_footer; ?>"></td>
                     </tr>
                     <tr>
                         <td><?php _e( 'Text color footer:', 'woocommerce-gift-coupon' ); ?></td>
-                        <td><input type="text" class="color" name="woocommerce_gift_coupon_text_color_footer" id="woocommerce_gift_coupon_text_color_footer" value="<?php echo $woocommerce_gift_coupon_text_color_footer; ?>"></td>
+                        <td><input type="text" class="woocommerce-gift-coupon-color" name="woocommerce_gift_coupon_text_color_footer" id="woocommerce_gift_coupon_text_color_footer" value="<?php echo $woocommerce_gift_coupon_text_color_footer; ?>"></td>
                     </tr>
                     <tr>
                         <td><?php _e( 'Text color title:', 'woocommerce-gift-coupon' ); ?></td>
-                        <td><input type="text" class="color" name="woocommerce_gift_coupon_text_color_title" id="woocommerce_gift_coupon_text_color_title" value="<?php echo $woocommerce_gift_coupon_text_color_title; ?>"></td>
+                        <td><input type="text" class="woocommerce-gift-coupon-color" name="woocommerce_gift_coupon_text_color_title" id="woocommerce_gift_coupon_text_color_title" value="<?php echo $woocommerce_gift_coupon_text_color_title; ?>"></td>
                     </tr>
                 </table>
             </div>
