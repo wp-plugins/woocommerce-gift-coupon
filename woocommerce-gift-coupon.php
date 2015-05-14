@@ -3,7 +3,7 @@
  * Plugin Name: Woocommerce Gift Coupon
  * Description: This plugin generates coupons from products bought by WooCommerce, once generated customer sends by email
  * Depends: WooCommerce
- * Version: 1.3
+ * Version: 1.4
  * Author: Alberto Pérez
  * Author URI: http://www.studiosweb.es/wordpress/woocommerce-gift-coupon/
  * License: GPL2
@@ -22,17 +22,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-define( 'WOOCOMMERCE_GIFT_COUPON_VERSION', '1.3' );
+define( 'WOOCOMMERCE_GIFT_COUPON_VERSION', '1.4' );
 define( 'WOOCOMMERCE_GIFT_COUPON_DIR', plugin_dir_path(__FILE__) );
 define( 'WOOCOMMERCE_GIFT_COUPON_URL', plugin_dir_url(__FILE__) );
 
 add_action( 'admin_enqueue_scripts', 'woocommerce_gift_coupon_plugin_scripts' );
 
 function woocommerce_gift_coupon_plugin_scripts() {
-   wp_register_script( 'woocommerce_gift_coupon_script', WOOCOMMERCE_GIFT_COUPON_URL.'admin/js/jscolor/jscolor.js' );
-   wp_enqueue_script( 'woocommerce_gift_coupon_script' );
-   wp_register_style( 'woocommerce_gift_coupon_css', WOOCOMMERCE_GIFT_COUPON_URL.'admin/css/styles.css' );
-   wp_enqueue_style( 'woocommerce_gift_coupon_css' );
+    wp_enqueue_style( 'wp-color-picker' );
+    wp_enqueue_script( 'woocommerce-gift-coupon', plugins_url('admin/js/jscolor/jscolor.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
+    wp_register_style( 'woocommerce_gift_coupon_css', WOOCOMMERCE_GIFT_COUPON_URL.'admin/css/styles.css' );
+    wp_enqueue_style( 'woocommerce_gift_coupon_css' );
 }
 
 register_activation_hook( __FILE__,'woocommerce_gift_coupon_activation' );
