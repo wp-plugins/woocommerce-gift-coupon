@@ -71,22 +71,22 @@ function woocommerce_gift_coupon_generate_body_mail( $data ) {
             </style>
             </head>
             <body>
-                <table width="500" cellpadding="10" cellspacing="0" style="border-collapse: collapse; background: #' . $woocommerce_gift_coupon_bg_color_header . '; color: #' . $woocommerce_gift_coupon_text_color_header . '; margin:0 auto;">
+                <table width="500" cellpadding="10" cellspacing="0" style="border-collapse: collapse; background: ' . $woocommerce_gift_coupon_bg_color_header . '; color: ' . $woocommerce_gift_coupon_text_color_header . '; margin:0 auto;">
                     <tr>
                         <td align="center"><span>' . $woocommerce_gift_coupon_info_paragraph . '</span></td>
                     </tr>
                 </table>
-                <table width="500" cellpadding="10" cellspacing="0" style="border-collapse: collapse; color: #' . $woocommerce_gift_coupon_text_color_title . '; background: #fff; margin:0 auto;">
+                <table width="500" cellpadding="10" cellspacing="0" style="border-collapse: collapse; color: ' . $woocommerce_gift_coupon_text_color_title . '; background: #fff; margin:0 auto;">
                     <tr>
-                        <td align="center"><h1 style="color: #' . $woocommerce_gift_coupon_text_color_title . '; margin:0 auto; text-align:center; border-bottom:1px solid #ccc; padding: 0 0 20px 0;">' . $woocommerce_gift_coupon_title . '</h1></td>
+                        <td align="center"><h1 style="color: ' . $woocommerce_gift_coupon_text_color_title . '; margin:0 auto; text-align:center; border-bottom:1px solid #ccc; padding: 0 0 20px 0;">' . $woocommerce_gift_coupon_title . '</h1></td>
                     </tr>
                 </table>
                 <table width="500" cellpadding="10" cellspacing="0" style="border-collapse: collapse; background: #fafafa; color: #3c3c3c; border:1px solid #ccc; margin:0 auto;">
                     ' . woocommerce_gift_coupon_show_array( $data, 1, 0 ) . '
                 </table>
-                <table width="500" cellpadding="10" cellspacing="0" style="border-collapse: collapse; background: #' . $woocommerce_gift_coupon_bg_color_footer . '; color: #' . $woocommerce_gift_coupon_text_color_footer . '; margin:0 auto;">
+                <table width="500" cellpadding="10" cellspacing="0" style="border-collapse: collapse; background: ' . $woocommerce_gift_coupon_bg_color_footer . '; color: ' . $woocommerce_gift_coupon_text_color_footer . '; margin:0 auto;">
                     <tr>
-                        <td align="center"><span><a style="color: #' . $woocommerce_gift_coupon_text_color_footer . '" href="' . get_site_url() . '" target="_blank">' . get_bloginfo( 'name' ) . '</a></span></td>
+                        <td align="center"><span><a style="color: ' . $woocommerce_gift_coupon_text_color_footer . '" href="' . get_site_url() . '" target="_blank">' . get_bloginfo( 'name' ) . '</a></span></td>
                     </tr>
                 </table>
             </body>
