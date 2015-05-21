@@ -3,7 +3,7 @@
  * Plugin Name: Woocommerce Gift Coupon
  * Description: This plugin generates coupons from products bought by WooCommerce, once generated customer sends by email
  * Depends: WooCommerce
- * Version: 1.7
+ * Version: 1.8
  * Author: Alberto Pérez
  * Author URI: http://www.studiosweb.es/
  * License: GPL2
@@ -22,7 +22,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-define( 'WOOCOMMERCE_GIFT_COUPON_VERSION', '1.7' );
+define( 'WOOCOMMERCE_GIFT_COUPON_VERSION', '1.8' );
 define( 'WOOCOMMERCE_GIFT_COUPON_DIR', plugin_dir_path(__FILE__) );
 define( 'WOOCOMMERCE_GIFT_COUPON_URL', plugin_dir_url(__FILE__) );
 
@@ -124,14 +124,6 @@ function woocommerce_gift_coupon_activation() {
     update_post_meta( $post_id, '_stock', "" );
     update_post_meta( $post_id, 'coupon_amount', "30" );
 
-    update_option( 'woocommerce_gift_coupon_text_color_header', 'ffffff' );
-    update_option( 'woocommerce_gift_coupon_text_color_footer', 'ffffff' );
-    update_option( 'woocommerce_gift_coupon_text_color_title', '000000' );
-    update_option( 'woocommerce_gift_coupon_bg_color_header', '000000' );
-    update_option( 'woocommerce_gift_coupon_bg_color_footer', '000000' );
-    update_option( 'woocommerce_gift_coupon_info_paragraph', 'Use each of these codes to apply discounts on next purchases' );
-    update_option( 'woocommerce_gift_coupon_subject', 'New generated coupons' );
-    update_option( 'woocommerce_gift_coupon_title', 'New generated coupons' );
 }
 
 function woocommerce_gift_coupon_deactivation() {
