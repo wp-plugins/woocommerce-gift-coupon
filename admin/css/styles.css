@@ -1,0 +1,96 @@
+#woocommerce-gift-coupon {
+    width:100%;
+}
+
+#woocommerce-gift-coupon ul {
+    margin:0;
+    padding:0;
+}
+    
+#woocommerce-gift-coupon li {
+    list-style-type: square;
+}
+
+#woocommerce-gift-coupon table {
+    width:100%;
+}
+
+#woocommerce-gift-coupon table td:first-child {
+    width:10%;
+    text-align: right;
+}
+
+#woocommerce-gift-coupon textarea, 
+#woocommerce-gift-coupon input[type="text"] {
+    width:80%; 
+}
+
+#woocommerce-gift-coupon textarea {
+    min-height: 100px;
+}
+
+#woocommerce-gift-coupon #gs-middle {
+    width:100%; 
+    float:left; 
+    margin:1% 0;
+}
+#woocommerce-gift-coupon #gs-middle .container {
+    float:left; 
+    width:100%;
+}
+
+#woocommerce-gift-coupon .wgc-box {
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    margin: 10px 0;
+    position: relative;
+    box-shadow: 0 0 10px #f2f2f2; 
+    width: 100%;
+    float: left;
+    background: #ffffff;
+}
+
+#woocommerce-gift-coupon .wgc-box .header {
+    height: 28px;
+    margin: 0px;
+    padding: 0px 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #dfdfdf;
+    font: normal normal bold 12px/29px Arial, serif;
+    color: #333;
+    text-shadow: 0px 1px 0px #fff;
+    text-align: left;
+    position: relative;
+    line-height: 28px;
+    border-radius: 3px 3px 0 0;
+    background: #f7f7f7;
+    background: -webkit-linear-gradient(to bottom, #f7f7f7 0%, #e6e6e6 100%);
+    background: -moz-linear-gradient(to bottom, #f7f7f7 0%, #e6e6e6 100%);
+    background: -o-linear-gradient(to bottom, #f7f7f7 0%, #e6e6e6 100%);
+    background: -ms-linear-gradient(to bottom, #f7f7f7 0%, #e6e6e6 100%);
+    background: linear-gradient(to bottom, #f7f7f7 0%, #e6e6e6 100%); 
+}
+
+#woocommerce-gift-coupon .wgc-box .header.medium {
+    height: 38px;
+    line-height: 38px; 
+}
+
+#woocommerce-gift-coupon .wgc-box .header h4 {
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: inherit;
+    color: #333;
+    text-shadow: 0px 1px 0px #fff;
+    text-align: left; 
+}
+
+#woocommerce-gift-coupon .wgc-box-body {
+    padding: 1%;
+    float: left;
+    width: 98%;
+}
