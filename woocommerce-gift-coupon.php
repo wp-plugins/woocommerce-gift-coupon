@@ -3,7 +3,7 @@
  * Plugin Name: Woocommerce Gift Coupon
  * Description: This plugin generates coupons from products bought by WooCommerce, once generated customer sends by email
  * Depends: WooCommerce
- * Version: 1.6
+ * Version: 1.7
  * Author: Alberto Pérez
  * Author URI: http://www.studiosweb.es/
  * License: GPL2
@@ -22,7 +22,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-define( 'WOOCOMMERCE_GIFT_COUPON_VERSION', '1.6' );
+define( 'WOOCOMMERCE_GIFT_COUPON_VERSION', '1.7' );
 define( 'WOOCOMMERCE_GIFT_COUPON_DIR', plugin_dir_path(__FILE__) );
 define( 'WOOCOMMERCE_GIFT_COUPON_URL', plugin_dir_url(__FILE__) );
 
@@ -56,7 +56,7 @@ return $links;
 
 add_action( 'admin_menu', 'woocommerce_gift_coupon_menu' );
 function woocommerce_gift_coupon_menu() {
-    add_menu_page( 'Woo Gift Coupon', 'Woo Gift Coupon', 'manage_options', 'woocommerce_gift_coupon_options_page', 'woocommerce_gift_coupon_import_options_page', WOOCOMMERCE_GIFT_COUPON_URL.'admin/images/woocommerce_gift_coupon-icon.png', 103 );
+    add_menu_page( 'Woo Gift Coupon', 'Woo Gift Coupon', 'manage_options', 'woocommerce_gift_coupon_options_page', 'woocommerce_gift_coupon_import_options_page', WOOCOMMERCE_GIFT_COUPON_URL.'admin/images/woocommerce_gift_coupon-icon.png' );
     add_submenu_page( 'woocommerce_gift_coupon_options_page', 'Documentation', 'Documentation', 'manage_options', 'woocommerce_gift_coupon_information_page', 'woocommerce_gift_coupon_import_information_page' );
 }
 
