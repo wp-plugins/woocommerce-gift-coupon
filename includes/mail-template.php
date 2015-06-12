@@ -86,7 +86,7 @@ function woocommerce_gift_coupon_generate_body_mail( $data ) {
                 </table>
                 <table width="500" cellpadding="10" cellspacing="0" style="border-collapse: collapse; background: ' . $woocommerce_gift_coupon_bg_color_footer . '; color: ' . $woocommerce_gift_coupon_text_color_footer . '; margin:0 auto;">
                     <tr>
-                        <td align="center"><span><a style="color: ' . $woocommerce_gift_coupon_text_color_footer . '" href="' . get_site_url() . '" target="_blank">' . get_bloginfo( 'name' ) . '</a></span></td>
+                        <td align="center"><span style="color: ' . $woocommerce_gift_coupon_text_color_footer . '">' . get_bloginfo( 'name' ) . '</span></td>
                     </tr>
                 </table>
             </body>

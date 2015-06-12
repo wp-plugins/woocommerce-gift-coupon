@@ -3,7 +3,7 @@
  * Plugin Name: Woocommerce Gift Coupon
  * Description: This plugin generates coupons from products bought by WooCommerce, once generated customer sends by email
  * Depends: WooCommerce
- * Version: 1.8
+ * Version: 1.9
  * Author: Alberto Pérez
  * Author URI: http://www.studiosweb.es/
  * License: GPL2
@@ -22,7 +22,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-define( 'WOOCOMMERCE_GIFT_COUPON_VERSION', '1.8' );
+define( 'WOOCOMMERCE_GIFT_COUPON_VERSION', '1.9' );
 define( 'WOOCOMMERCE_GIFT_COUPON_DIR', plugin_dir_path(__FILE__) );
 define( 'WOOCOMMERCE_GIFT_COUPON_URL', plugin_dir_url(__FILE__) );
 
